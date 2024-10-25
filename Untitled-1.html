@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:400,700" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1 class="logo">YourName</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#career-plan">Career Plan</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h2>Hello, I'm <span>Your Name</span></h2>
+            <h3>A <span>Your Profession</span> based in <span>Your Location</span></h3>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section-about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello, I am Chase Lobosco, a second-year Intelligent Systems Engineering student at Indiana University. Welcome to my portfolio website, which I created using HTML and CSS.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="Screenshot 2024-02-15 193007.png" alt="Your Name">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work" class="section-projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects">
+                <!-- Repeat this block for each project -->
+                <div class="project">
+                    <img src="proj1Cover.jpg" alt="Project Title">
+                    <div class="project-info">
+                        <h3>Project Title</h3>
+                        <p>Short description of the project.</p>
+                        <a href="project1.html" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <!-- End of project block -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section-resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <div class="resume-content">
+                <!-- Include your resume details here -->
+                <h3>Experience</h3>
+                <ul>
+                    <li>
+                        <strong>Job Title</strong> at <em>Company Name</em> (Start Date - End Date)
+                        <p>Brief description of your role and achievements.</p>
+                    </li>
+                    <!-- Add more experiences as needed -->
+                </ul>
+                <h3>Education</h3>
+                <ul>
+                    <li>
+                        <strong>Degree</strong> in <em>Field of Study</em> from <em>Institution Name</em> (Year)
+                        <p>Relevant coursework or honors.</p>
+                    </li>
+                    <!-- Add more education details as needed -->
+                </ul>
+                <h3>Skills</h3>
+                <p>
+                    <!-- List your skills -->
+                    • Skill 1<br>
+                    • Skill 2<br>
+                    • Skill 3<br>
+                    <!-- Add more skills as needed -->
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Plan Section -->
+    <section id="career-plan" class="section-career-plan">
+        <div class="container">
+            <h2>Career Plan</h2>
+            <div class="career-plan-content">
+                <p>
+                    <!-- Outline your career goals and aspirations -->
+                    My career plan involves focusing on <strong>your goals</strong>, enhancing my skills in <strong>specific areas</strong>, and contributing to the advancement of <strong>your industry or field</strong>. I aim to achieve <strong>specific objectives</strong> over the next few years, including <strong>short-term goals</strong> and progressing towards <strong>long-term ambitions</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out for collaborations or just a friendly chat.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Your City, Your Country</span>
+                </div>
+            </div>
+            <div class="social-media">
+                <!-- Social media links -->
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+                <!-- Add more icons as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to update the year automatically -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
