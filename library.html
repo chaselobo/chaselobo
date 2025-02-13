@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Library</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+    .video-library {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .video-library header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .category {
+      margin-bottom: 40px;
+    }
+    .category h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    .video-item {
+      margin-bottom: 20px;
+    }
+    .video-item h3 {
+      margin: 10px 0 5px;
+    }
+    .video-item time {
+      font-size: 0.9em;
+      color: #666;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-library">
+    <header>
+      <h1>Video Library</h1>
+      <p>Browse videos by category and date</p>
+    </header>
+    
+    <!-- Schoolwork Category -->
+    <section class="category" id="schoolwork">
+      <h2>Schoolwork</h2>
+      <div class="video-item">
+        <h3>2/12/2025</h3>
+        <time datetime="2023-09-15">doing my homework</time>
+        <video controls>
+          <source src="2025-02-12 19-13-20.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Add more schoolwork video entries here -->
+    </section>
+    
+    <!-- Outside of Schoolwork Category -->
+    <section class="category" id="outside">
+      <h2>Outside of Schoolwork</h2>
+      
+      <!-- Add more outside of schoolwork video entries here -->
+    </section>
+  </div>
+</body>
+</html>
